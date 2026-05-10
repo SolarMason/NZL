@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161618"/>
+      <stop offset="1" stop-color="#0A0A0B"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF8A1F"/>
+      <stop offset="1" stop-color="#FF5A00"/>
+    </linearGradient>
+    <linearGradient id="markBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2A2A2C"/>
+      <stop offset="1" stop-color="#0F0F10"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.025" stroke-width="1"/>
+    </pattern>
+    <clipPath id="cardClip">
+      <rect x="60" y="55" width="1080" height="520" rx="32"/>
+    </clipPath>
+  </defs>
+
+  <!-- Stage -->
+  <rect width="1200" height="630" fill="#06060A"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Card body (clipped so stripe can't escape) -->
+  <g clip-path="url(#cardClip)">
+    <rect x="60" y="55" width="1080" height="520" fill="url(#cardBg)"/>
+    <!-- Hi-vis safety stripe (bleeds to clip edges, never past) -->
+    <path d="M60 488 L1140 408 L1140 488 L60 568 Z" fill="url(#orange)"/>
+  </g>
+  <!-- Card border for crispness -->
+  <rect x="60" y="55" width="1080" height="520" rx="32" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- LEFT: identity -->
+  <g transform="translate(110, 110)">
+    <!-- Mark badge -->
+    <rect x="0" y="0" width="108" height="108" rx="26" fill="url(#markBg)"/>
+    <path d="M0 84 L108 67 L108 84 L0 100 Z" fill="url(#orange)"/>
+    <text x="54" y="50" text-anchor="middle" dominant-baseline="middle"
+          fill="#FFFFFF" font-family="-apple-system, system-ui, 'SF Pro Display', Helvetica, Arial, sans-serif"
+          font-weight="900" font-size="42" letter-spacing="-2.5">NZL</text>
+
+    <!-- Wordmark -->
+    <text x="0" y="200" fill="#FFFFFF" font-family="-apple-system, system-ui, 'SF Pro Display', Helvetica, Arial, sans-serif"
+          font-weight="800" font-size="92" letter-spacing="-4">NZL</text>
+    <text x="0" y="248" fill="#FFFFFF" font-family="-apple-system, system-ui, 'SF Pro Display', Helvetica, Arial, sans-serif"
+          font-weight="500" font-size="26" letter-spacing="-0.5" opacity="0.65">Northeast PA's handyman</text>
+
+    <!-- Trust pills -->
+    <g transform="translate(0, 290)" font-family="-apple-system, system-ui, 'SF Pro Text', Helvetica, Arial, sans-serif"
+       font-weight="700" font-size="15" fill="#FFFFFF" letter-spacing="1.5">
+      <rect x="0" y="0" width="108" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.08"/>
+      <text x="54" y="22" text-anchor="middle">VETERAN</text>
+      <rect x="118" y="0" width="86" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.08"/>
+      <text x="161" y="22" text-anchor="middle">LOCAL</text>
+      <rect x="214" y="0" width="100" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.08"/>
+      <text x="264" y="22" text-anchor="middle">INSURED</text>
+    </g>
+  </g>
+
+  <!-- RIGHT: phone (sized to actually fit) -->
+  <g transform="translate(620, 130)">
+    <text x="0" y="0" fill="#FFFFFF" font-family="-apple-system, system-ui, 'SF Pro Text', Helvetica, Arial, sans-serif"
+          font-weight="600" font-size="18" opacity="0.55" letter-spacing="3">CALL OR TEXT</text>
+
+    <!-- Phone — confirmed to fit: 12 chars at 64px ≈ 480px, content area is 500px wide -->
+    <text x="0" y="78" fill="#FF8A1F" font-family="-apple-system, system-ui, 'SF Pro Display', Helvetica, Arial, sans-serif"
+          font-weight="800" font-size="64" letter-spacing="-2.5">570-507-1188</text>
+
+    <!-- Service area -->
+    <text x="0" y="135" fill="#FFFFFF" font-family="-apple-system, system-ui, 'SF Pro Text', Helvetica, Arial, sans-serif"
+          font-weight="600" font-size="20" opacity="0.85">Scranton · Clarks Summit · Wilkes-Barre</text>
+    <text x="0" y="162" fill="#FFFFFF" font-family="-apple-system, system-ui, 'SF Pro Text', Helvetica, Arial, sans-serif"
+          font-weight="500" font-size="18" opacity="0.5">All of Northeast Pennsylvania</text>
+
+    <!-- Hours -->
+    <text x="0" y="220" fill="#FFFFFF" font-family="-apple-system, system-ui, 'SF Pro Text', Helvetica, Arial, sans-serif"
+          font-weight="600" font-size="18" opacity="0.7">Mon–Sat 7a–7p · Same-day response</text>
+  </g>
+
+  <!-- BOTTOM: NEPA-PRO badge sitting fully on the stripe (y=495 is mid-stripe at x=600) -->
+  <text x="600" y="498" text-anchor="middle"
+        fill="#0A0A0A" font-family="-apple-system, system-ui, 'SF Pro Text', Helvetica, Arial, sans-serif"
+        font-weight="800" font-size="18" letter-spacing="4">A NEPA-PRO SERVICE · NZL.NEPA-PRO.COM</text>
+</svg>

@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=yes">
+<meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
+
+<!-- SEO -->
+<title>NZL · Northeast PA's Handyman · Call 570-507-1188</title>
+<meta name="description" content="NZL handyman services for Northeast Pennsylvania. Drywall, painting, plumbing, electrical, carpentry, tile, doors, mounting. Veteran owned. Same-day calls. 570-507-1188.">
+<meta name="author" content="NEPA-PRO">
+<link rel="canonical" href="https://nzl.nepa-pro.com/">
+
+<!-- Open Graph (one unified card across every platform) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NZL — by NEPA-PRO">
+<meta property="og:title" content="NZL · Northeast PA's Handyman">
+<meta property="og:description" content="One number. One handyman. All of Northeast Pennsylvania. Call 570-507-1188.">
+<meta property="og:url" content="https://nzl.nepa-pro.com/">
+<meta property="og:image" content="https://nzl.nepa-pro.com/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NZL business card — Northeast PA's handyman, 570-507-1188">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NZL · Northeast PA's Handyman">
+<meta name="twitter:description" content="Veteran-owned handyman serving all of NEPA. Call 570-507-1188.">
+<meta name="twitter:image" content="https://nzl.nepa-pro.com/og-card.png">
+
+<!-- Icons: Google -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="icon" type="image/svg+xml" href="/nzl-mark.svg">
+
+<!-- Icons: Apple -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="NZL">
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.webmanifest">
+
+<!-- Structured Data: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "NZL",
+  "alternateName": "NZL by NEPA-PRO",
+  "description": "Veteran-owned handyman service for all of Northeast Pennsylvania.",
+  "image": "https://nzl.nepa-pro.com/og-card.png",
+  "url": "https://nzl.nepa-pro.com/",
+  "telephone": "+1-570-507-1188",
+  "areaServed": [
+    "Scranton, PA","Clarks Summit, PA","Wilkes-Barre, PA","Dunmore, PA",
+    "Olyphant, PA","Old Forge, PA","Moosic, PA","Pittston, PA",
+    "Kingston, PA","Dallas, PA","Throop, PA","Jessup, PA",
+    "Archbald, PA","Carbondale, PA","Tunkhannock, PA","Honesdale, PA"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Clarks Summit",
+    "addressRegion": "PA",
+    "postalCode": "18411",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","description":"By appointment"}
+  ],
+  "parentOrganization": { "@type": "Organization", "name": "NEPA-PRO" }
+}
+</script>
+
+<style>
+/* ───────────── Design tokens ───────────── */
+:root {
+  /* Brand */
+  --orange: #FF6B00;
+  --orange-bright: #FF8A1F;
+  --orange-deep: #E55400;
+
+  /* iOS Light */
+  --bg: #FAFAF7;
+  --bg-elev: #FFFFFF;
+  --bg-tint: rgba(255,255,255,0.72);
+  --ink: #0A0A0B;
+  --ink-2: #1C1C1E;
+  --ink-3: #3A3A3C;
+  --ink-4: rgba(10,10,11,0.55);
+  --ink-5: rgba(10,10,11,0.32);
+  --hairline: rgba(10,10,11,0.08);
+  --card: #FFFFFF;
+  --card-shadow: 0 1px 0 rgba(10,10,11,0.04), 0 8px 24px -12px rgba(10,10,11,0.12);
+
+  /* Typography */
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-text: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Monaco, monospace;
+
+  /* iOS curvature */
+  --r-sm: 12px;
+  --r-md: 18px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  /* Spacing */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 20px;
+  --s-6: 24px; --s-7: 32px; --s-8: 40px; --s-10: 56px; --s-12: 72px;
+
+  /* Safe area */
+  --sa-t: env(safe-area-inset-top, 0px);
+  --sa-b: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --bg-elev: #1C1C1E;
+    --bg-tint: rgba(28,28,30,0.72);
+    --ink: #FFFFFF;
+    --ink-2: #F2F2F7;
+    --ink-3: #C7C7CC;
+    --ink-4: rgba(255,255,255,0.55);
+    --ink-5: rgba(255,255,255,0.32);
+    --hairline: rgba(255,255,255,0.10);
+    --card: #1C1C1E;
+    --card-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 8px 24px -12px rgba(0,0,0,0.6);
+  }
+}
+
+/* ───────────── Reset ───────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-text);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv01", "cv11";
+  line-height: 1.45;
+  overflow-x: hidden;
+  padding-bottom: calc(96px + var(--sa-b)); /* room for sticky mobile call bar */
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ───────────── Floating glass header ───────────── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: calc(var(--sa-t) + 10px) var(--s-5) 10px;
+  background: var(--bg-tint);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 240ms ease;
+}
+.nav.is-scrolled { border-bottom-color: var(--hairline); }
+.nav__row {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-4);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+.brand__mark {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1C1C1E, #000);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.brand__mark::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 4px;
+  height: 5px;
+  background: linear-gradient(135deg, var(--orange-bright), var(--orange));
+  transform: skewY(-6deg);
+}
+.brand__mark span {
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: -0.5px;
+  z-index: 1;
+}
+.brand__name { letter-spacing: -0.6px; }
+.brand__sub {
+  display: none;
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--ink-4);
+  letter-spacing: 0;
+  margin-left: 4px;
+}
+@media (min-width: 480px) { .brand__sub { display: inline; } }
+
+/* Top-right click-to-call — the only other CTA */
+.call-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--orange);
+  color: white;
+  padding: 10px 14px 10px 12px;
+  border-radius: var(--r-pill);
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 4px 12px -2px rgba(255,107,0,0.5);
+  transition: transform 120ms ease, background 120ms ease;
+  white-space: nowrap;
+}
+.call-pill:hover { background: var(--orange-deep); }
+.call-pill:active { transform: scale(0.96); }
+.call-pill__icon {
+  width: 16px; height: 16px;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+@media (min-width: 480px) {
+  .call-pill { padding: 10px 18px 10px 14px; font-size: 15px; }
+}
+
+/* ───────────── Container ───────────── */
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--s-5);
+}
+@media (min-width: 768px) { .wrap { padding: 0 var(--s-7); } }
+
+/* ───────────── Hero ───────────── */
+.hero {
+  padding-top: var(--s-8);
+  padding-bottom: var(--s-10);
+  position: relative;
+}
+@media (min-width: 768px) { .hero { padding-top: var(--s-12); padding-bottom: var(--s-12); } }
+@media (min-width: 1024px) { .hero { padding-top: 80px; padding-bottom: 96px; } }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--bg-elev);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-pill);
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  box-shadow: var(--card-shadow);
+}
+.eyebrow__dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #34C759; /* iOS green */
+  box-shadow: 0 0 0 4px rgba(52,199,89,0.18);
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(40px, 9vw, 88px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  margin-top: var(--s-5);
+  color: var(--ink);
+}
+.hero__title em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--orange-bright), var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero__sub {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: clamp(17px, 2.4vw, 22px);
+  line-height: 1.4;
+  color: var(--ink-3);
+  margin-top: var(--s-5);
+  max-width: 560px;
+  letter-spacing: -0.3px;
+}
+
+.cta-stack {
+  margin-top: var(--s-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  align-items: flex-start;
+}
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(180deg, var(--orange-bright), var(--orange));
+  color: #fff;
+  padding: 18px 28px;
+  border-radius: var(--r-pill);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(18px, 2.4vw, 22px);
+  letter-spacing: -0.5px;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.25) inset,
+    0 -8px 24px -12px rgba(0,0,0,0.4) inset,
+    0 12px 28px -8px rgba(255,107,0,0.55);
+  transition: transform 140ms cubic-bezier(.2,.8,.2,1), box-shadow 140ms ease;
+  position: relative;
+  overflow: hidden;
+}
+.cta-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,0.35), transparent 60%);
+  pointer-events: none;
+}
+.cta-primary:hover { transform: translateY(-1px); }
+.cta-primary:active { transform: scale(0.985); }
+.cta-primary__icon { width: 22px; height: 22px; }
+.cta-hint {
+  font-family: var(--font-text);
+  font-size: 13px;
+  color: var(--ink-4);
+  font-weight: 500;
+  letter-spacing: -0.1px;
+}
+
+/* Trust strip */
+.trust {
+  margin-top: var(--s-7);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+.trust__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: var(--bg-elev);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-pill);
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--ink-2);
+  box-shadow: var(--card-shadow);
+}
+.trust__chip svg { width: 14px; height: 14px; color: var(--orange); }
+
+/* ───────────── Section heads ───────────── */
+.section { padding-block: var(--s-10); }
+@media (min-width: 768px) { .section { padding-block: var(--s-12); } }
+
+.section__eyebrow {
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+.section__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(28px, 4.6vw, 48px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: var(--ink);
+  margin-top: var(--s-2);
+  max-width: 720px;
+}
+.section__lede {
+  font-family: var(--font-text);
+  font-size: clamp(16px, 1.6vw, 18px);
+  color: var(--ink-3);
+  margin-top: var(--s-3);
+  max-width: 640px;
+  line-height: 1.5;
+}
+
+/* ───────────── Services grid (NOT links — they're info cards) ───────────── */
+.services {
+  margin-top: var(--s-7);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-3);
+}
+@media (min-width: 640px) { .services { grid-template-columns: repeat(3, 1fr); gap: var(--s-4); } }
+@media (min-width: 1024px) { .services { grid-template-columns: repeat(4, 1fr); gap: var(--s-4); } }
+
+.svc {
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-lg);
+  padding: var(--s-5);
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  min-height: 132px;
+  transition: transform 200ms cubic-bezier(.2,.8,.2,1);
+}
+.svc:hover { transform: translateY(-2px); }
+.svc__icon {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255,138,31,0.18), rgba(255,107,0,0.08));
+  display: grid;
+  place-items: center;
+  color: var(--orange);
+}
+.svc__icon svg { width: 20px; height: 20px; }
+.svc__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+  margin-top: auto;
+}
+.svc__desc {
+  font-family: var(--font-text);
+  font-size: 13px;
+  color: var(--ink-4);
+  line-height: 1.4;
+}
+
+/* ───────────── Why NZL — three pillars ───────────── */
+.pillars {
+  margin-top: var(--s-7);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-4);
+}
+@media (min-width: 768px) { .pillars { grid-template-columns: repeat(3, 1fr); } }
+.pillar {
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-lg);
+  padding: var(--s-6);
+  box-shadow: var(--card-shadow);
+}
+.pillar__num {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--orange);
+  letter-spacing: 1px;
+}
+.pillar__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.6px;
+  margin-top: var(--s-2);
+  color: var(--ink);
+}
+.pillar__body {
+  font-family: var(--font-text);
+  font-size: 15px;
+  color: var(--ink-3);
+  margin-top: var(--s-3);
+  line-height: 1.5;
+}
+
+/* ───────────── Service area ───────────── */
+.area {
+  margin-top: var(--s-7);
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-xl);
+  padding: var(--s-7);
+  box-shadow: var(--card-shadow);
+}
+@media (min-width: 768px) { .area { padding: var(--s-8); } }
+.area__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--ink-4);
+}
+.area__list {
+  margin-top: var(--s-5);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  list-style: none;
+}
+.area__list li {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(18px, 2.8vw, 28px);
+  letter-spacing: -0.6px;
+  color: var(--ink);
+  padding: 6px 14px;
+  background: rgba(255,107,0,0.06);
+  border: 1px solid rgba(255,107,0,0.18);
+  border-radius: var(--r-pill);
+}
+.area__more {
+  margin-top: var(--s-5);
+  font-family: var(--font-text);
+  font-size: 14px;
+  color: var(--ink-4);
+  font-weight: 500;
+}
+
+/* ───────────── Hours ───────────── */
+.hours {
+  margin-top: var(--s-7);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-4);
+}
+@media (min-width: 640px) { .hours { grid-template-columns: 1fr 1fr; } }
+.hours__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--s-5);
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-md);
+  box-shadow: var(--card-shadow);
+}
+.hours__day {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+}
+.hours__time {
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink-3);
+}
+
+/* ───────────── Big call card ───────────── */
+.bigcall {
+  margin-top: var(--s-10);
+  background: linear-gradient(135deg, #0F0F10, #000);
+  border-radius: var(--r-xl);
+  padding: var(--s-8) var(--s-6);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+@media (min-width: 768px) { .bigcall { padding: 64px 48px; } }
+.bigcall::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(60% 50% at 80% 20%, rgba(255,138,31,0.25), transparent 60%),
+    radial-gradient(50% 50% at 20% 100%, rgba(255,107,0,0.18), transparent 60%);
+  z-index: -1;
+}
+.bigcall::after {
+  content: "";
+  position: absolute;
+  left: -10%; right: -10%;
+  bottom: 22%;
+  height: 18%;
+  background: linear-gradient(135deg, var(--orange-bright), var(--orange-deep));
+  transform: skewY(-4deg);
+  opacity: 0.95;
+  z-index: -1;
+}
+.bigcall__eyebrow {
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+.bigcall__num {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(40px, 9vw, 88px);
+  letter-spacing: -3px;
+  margin-top: var(--s-3);
+  color: white;
+}
+.bigcall__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: var(--s-6);
+  padding: 16px 28px;
+  background: white;
+  color: #0A0A0B;
+  border-radius: var(--r-pill);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.3px;
+  transition: transform 120ms ease;
+}
+.bigcall__cta:active { transform: scale(0.97); }
+.bigcall__sub {
+  margin-top: var(--s-4);
+  font-family: var(--font-text);
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  font-weight: 500;
+}
+
+/* ───────────── Footer ───────────── */
+.foot {
+  margin-top: var(--s-10);
+  padding-block: var(--s-7) var(--s-10);
+  border-top: 1px solid var(--hairline);
+}
+.foot__row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .foot__row { flex-direction: row; justify-content: space-between; align-items: center; }
+}
+.foot__brand {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+.foot__brand span { color: var(--ink-4); font-weight: 500; }
+.foot__legal {
+  font-family: var(--font-text);
+  font-size: 12px;
+  color: var(--ink-4);
+  font-weight: 500;
+  letter-spacing: -0.1px;
+}
+
+/* ───────────── Mobile sticky call bar ───────────── */
+.sticky-call {
+  position: fixed;
+  left: 0; right: 0;
+  bottom: 0;
+  z-index: 90;
+  padding: 12px var(--s-4) calc(12px + var(--sa-b));
+  background: var(--bg-tint);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-top: 1px solid var(--hairline);
+  display: flex;
+  justify-content: center;
+}
+.sticky-call .cta-primary {
+  width: 100%;
+  max-width: 480px;
+  padding: 14px 24px;
+  font-size: 17px;
+}
+@media (min-width: 768px) { .sticky-call { display: none; } }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Hero entrance */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero > * { animation: fadeUp 700ms cubic-bezier(.2,.8,.2,1) both; }
+.hero > *:nth-child(1) { animation-delay: 60ms; }
+.hero > *:nth-child(2) { animation-delay: 140ms; }
+.hero > *:nth-child(3) { animation-delay: 220ms; }
+.hero > *:nth-child(4) { animation-delay: 300ms; }
+.hero > *:nth-child(5) { animation-delay: 380ms; }
+@media (prefers-reduced-motion: reduce) { .hero > * { animation: none; } }
+</style>
+</head>
+<body>
+
+<!-- ───── Floating glass header ───── -->
+<header class="nav" id="nav">
+  <div class="nav__row">
+    <div class="brand" aria-label="NZL — Northeast Pennsylvania handyman">
+      <div class="brand__mark" aria-hidden="true"><span>NZL</span></div>
+      <span class="brand__name">NZL</span>
+      <span class="brand__sub">by NEPA-PRO</span>
+    </div>
+    <a class="call-pill" href="tel:+15705071188" aria-label="Call NZL at 570-507-1188">
+      <svg class="call-pill__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M22 16.92V21a1 1 0 0 1-1.11 1A19.86 19.86 0 0 1 2 4.11 1 1 0 0 1 3 3h4.09a1 1 0 0 1 1 .75l1 4a1 1 0 0 1-.27 1L7.21 10.21a16 16 0 0 0 6.58 6.58l1.46-1.46a1 1 0 0 1 1-.27l4 1a1 1 0 0 1 .75 1Z" fill="currentColor"/>
+      </svg>
+      <span>570-507-1188</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ───── Hero ───── -->
+  <section class="wrap hero">
+    <div class="eyebrow">
+      <span class="eyebrow__dot" aria-hidden="true"></span>
+      <span>Available today · Northeast Pennsylvania</span>
+    </div>
+    <h1 class="hero__title">The list is long.<br>The number is <em>one</em>.</h1>
+    <p class="hero__sub">NZL is a veteran-owned handyman crew serving all of NEPA. Drywall to doorknobs, leaks to lights — one call covers it.</p>
+
+    <div class="cta-stack">
+      <a class="cta-primary" href="tel:+15705071188" aria-label="Call NZL at 570-507-1188">
+        <svg class="cta-primary__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M22 16.92V21a1 1 0 0 1-1.11 1A19.86 19.86 0 0 1 2 4.11 1 1 0 0 1 3 3h4.09a1 1 0 0 1 1 .75l1 4a1 1 0 0 1-.27 1L7.21 10.21a16 16 0 0 0 6.58 6.58l1.46-1.46a1 1 0 0 1 1-.27l4 1a1 1 0 0 1 .75 1Z" fill="currentColor"/>
+        </svg>
+        <span>Call 570-507-1188</span>
+      </a>
+      <span class="cta-hint">Tap to dial · Mon–Sat 7a–7p · Same-day response</span>
+    </div>
+
+    <div class="trust" aria-label="Credentials">
+      <span class="trust__chip">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg>
+        Veteran owned &amp; operated
+      </span>
+      <span class="trust__chip">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        Local to NEPA
+      </span>
+      <span class="trust__chip">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19l12-12-1.4-1.4Z"/></svg>
+        Licensed &amp; insured
+      </span>
+    </div>
+  </section>
+
+  <!-- ───── What we fix ───── -->
+  <section class="wrap section" id="services">
+    <div>
+      <div class="section__eyebrow">What we fix</div>
+      <h2 class="section__title">Everything on the honey-do list. One call.</h2>
+      <p class="section__lede">If it's broken, loose, leaking, missing, ugly, or just won't stop creaking — we handle it. Big enough to do the job right, small enough to actually pick up the phone.</p>
+    </div>
+
+    <div class="services">
+      <div class="svc">
+        <div class="svc__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+        </div>
+        <p class="svc__desc">Patches, holes, full hangs</p>
+        <h3 class="svc__title">Drywall &amp; Repair</h3>
+      </div>
+      <div class="svc">
+        <div class="svc__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 11V5l-7 7-7-7v6"/><path d="M5 21h14"/><path d="M12 12v9"/></svg>
+        </div>
+        <p class="svc__desc">Interior, trim, touch-ups</p>
+        <h3 class="svc__title">Painting</h3>
+      </div>
+      <div class="svc">
+        <div class="svc__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M8 8h8"/><path d="M10 8v8a2 2 0 0 0 4 0v-2"/><path d="M16 14h4v4a2 2 0 0 1-2 2"/></svg>
+        </div>
+        <p class="svc__desc">Faucets, leaks, toilets, traps</p>
+        <h3 class="svc__title">Plumbing Fixes</h3>
+      </div>
+      <div class="svc">
+        <div class="svc__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+        </div>
+        <p class="svc__desc">Fixtures, switches, outlets</p>
+        <h3 class="svc__title">Lights &amp; Switches</h3>
+      </div>
+      <div class="svc">
+        <div class="svc__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18l-2 13H5L3 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+        </div>
+        <p class="svc__desc">Trim, baseboard, shelving</p>
+        <h3 class="svc__title">Carpentry</h3>
+      </div>
+      <div class="svc">
+        <div class="svc__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        </div>
+        <p class="svc__desc">Backsplash, floor, repairs</p>
+        <h3 class="svc__title">Tile &amp; Floor</h3>
+      </div>
+      <div class="svc">
+        <div class="svc__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><circle cx="15" cy="12" r="1" fill="currentColor"/></svg>
+        </div>
+        <p class="svc__desc">Hinges, locks, weather seal</p>
+        <h3 class="svc__title">Doors &amp; Windows</h3>
+      </div>
+      <div class="svc">
+        <div class="svc__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="1"/><path d="M2 10h20"/><path d="M6 18v2M18 18v2"/></svg>
+        </div>
+        <p class="svc__desc">TVs, shelves, furniture</p>
+        <h3 class="svc__title">Mount &amp; Assemble</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Why NZL ───── -->
+  <section class="wrap section" id="why">
+    <div>
+      <div class="section__eyebrow">Why NZL</div>
+      <h2 class="section__title">A handyman who actually answers.</h2>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <span class="pillar__num">01</span>
+        <h3 class="pillar__title">Same-day calls</h3>
+        <p class="pillar__body">You call. We answer. Most jobs scheduled within 24 hours — many same-day. No phone tag.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar__num">02</span>
+        <h3 class="pillar__title">NEPA, top to bottom</h3>
+        <p class="pillar__body">Scranton to Wilkes-Barre, Clarks Summit to the Endless Mountains — we know these roads, these houses, this winter.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar__num">03</span>
+        <h3 class="pillar__title">Veteran-owned</h3>
+        <p class="pillar__body">Run by a U.S. veteran and operating engineer. Show up on time. Do what we said we'd do. Clean up when we leave.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Service area ───── -->
+  <section class="wrap section" id="area">
+    <div>
+      <div class="section__eyebrow">Service area</div>
+      <h2 class="section__title">All of Northeast Pennsylvania.</h2>
+    </div>
+
+    <div class="area">
+      <div class="area__title">Towns we cover</div>
+      <ul class="area__list">
+        <li>Scranton</li>
+        <li>Clarks Summit</li>
+        <li>Wilkes-Barre</li>
+        <li>Dunmore</li>
+        <li>Olyphant</li>
+        <li>Old Forge</li>
+        <li>Moosic</li>
+        <li>Pittston</li>
+        <li>Kingston</li>
+        <li>Dallas</li>
+        <li>Throop</li>
+        <li>Jessup</li>
+        <li>Archbald</li>
+        <li>Carbondale</li>
+        <li>Tunkhannock</li>
+        <li>Honesdale</li>
+      </ul>
+      <p class="area__more">Don't see your town? You're probably still in our zone. Call and ask — 570-507-1188.</p>
+    </div>
+  </section>
+
+  <!-- ───── Hours ───── -->
+  <section class="wrap section" id="hours">
+    <div>
+      <div class="section__eyebrow">Hours</div>
+      <h2 class="section__title">When we're working.</h2>
+    </div>
+
+    <div class="hours">
+      <div class="hours__row">
+        <span class="hours__day">Monday – Friday</span>
+        <span class="hours__time">7:00 AM – 7:00 PM</span>
+      </div>
+      <div class="hours__row">
+        <span class="hours__day">Saturday</span>
+        <span class="hours__time">7:00 AM – 7:00 PM</span>
+      </div>
+      <div class="hours__row">
+        <span class="hours__day">Sunday</span>
+        <span class="hours__time">By appointment</span>
+      </div>
+      <div class="hours__row">
+        <span class="hours__day">Emergencies</span>
+        <span class="hours__time">Call anytime</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Big call card ───── -->
+  <section class="wrap" id="call">
+    <div class="bigcall">
+      <span class="bigcall__eyebrow">One number. That's the whole pitch.</span>
+      <span class="bigcall__num">570-507-1188</span>
+      <a class="bigcall__cta" href="tel:+15705071188" aria-label="Call NZL at 570-507-1188">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M22 16.92V21a1 1 0 0 1-1.11 1A19.86 19.86 0 0 1 2 4.11 1 1 0 0 1 3 3h4.09a1 1 0 0 1 1 .75l1 4a1 1 0 0 1-.27 1L7.21 10.21a16 16 0 0 0 6.58 6.58l1.46-1.46a1 1 0 0 1 1-.27l4 1a1 1 0 0 1 .75 1Z" fill="currentColor"/>
+        </svg>
+        Call now
+      </a>
+      <p class="bigcall__sub">Mon–Sat 7a–7p · Sunday by appointment · Veteran owned</p>
+    </div>
+  </section>
+
+  <!-- ───── Footer ───── -->
+  <footer class="wrap foot">
+    <div class="foot__row">
+      <div class="foot__brand">NZL <span>· a NEPA-PRO service · Clarks Summit, PA</span></div>
+      <div class="foot__legal">© <span id="yr">2026</span> NEPA-PRO LLC · Licensed &amp; insured · 570-507-1188</div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- Mobile sticky call bar (only shown < 768px) -->
+<div class="sticky-call" role="region" aria-label="Quick call">
+  <a class="cta-primary" href="tel:+15705071188" aria-label="Call NZL at 570-507-1188">
+    <svg class="cta-primary__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M22 16.92V21a1 1 0 0 1-1.11 1A19.86 19.86 0 0 1 2 4.11 1 1 0 0 1 3 3h4.09a1 1 0 0 1 1 .75l1 4a1 1 0 0 1-.27 1L7.21 10.21a16 16 0 0 0 6.58 6.58l1.46-1.46a1 1 0 0 1 1-.27l4 1a1 1 0 0 1 .75 1Z" fill="currentColor"/>
+    </svg>
+    Call 570-507-1188
+  </a>
+</div>
+
+<script>
+// Year stamp
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Header hairline on scroll
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 4);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+// Service worker registration
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => { /* offline cache is a nice-to-have */ });
+  });
+}
+</script>
+
+</body>
+</html>

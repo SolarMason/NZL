@@ -1,0 +1,30 @@
+{
+  "name": "NZL — Northeast PA's Handyman",
+  "short_name": "NZL",
+  "description": "Veteran-owned handyman service for all of Northeast Pennsylvania. Call 570-507-1188.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAFAF7",
+  "theme_color": "#0A0A0B",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["business", "lifestyle", "utilities"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-256.png", "sizes": "256x256", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Call NZL",
+      "short_name": "Call",
+      "description": "Call 570-507-1188",
+      "url": "/?utm_source=pwa&utm_medium=shortcut",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
